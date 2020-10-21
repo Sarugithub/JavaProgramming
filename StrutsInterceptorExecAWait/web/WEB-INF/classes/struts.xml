@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts SYSTEM "http://struts.apache.org/dtds/struts-2.1.dtd" PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN">
+
+<struts>
+
+<package extends="struts-default" name="abc">
+<action name="login" class="com.Login">  
+    <interceptor-ref name="params"/>  
+    <interceptor-ref name="execAndWait"/>  
+    <result name="success">login-success.jsp</result>  
+    <result name="wait">myintermediatepage.jsp</result>
+    <result name="error">error.jsp</result>
+</action>  
+</action>
+
+</package>
+
+</struts>
